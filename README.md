@@ -1,6 +1,6 @@
 # Jesús R. L. González
 
-**Manufacturing Quality & Operations Data Scientist · ISO 9001:2015 Lead Auditor (CQI-IRCA #18007)**
+**Manufacturing Quality & Operations Data Scientist · ISO 9001:2015 Lead Auditor course passed (CQI-IRCA #18007)**
 Puebla–Tlaxcala, Mexico · 4-year German dual apprenticeship (IHK, VDA) · ES / DE
 
 > I turn scrap, failure alerts and defects into cost-based decisions — and tell you *before* you invest whether your data can support a model.
@@ -34,7 +34,30 @@ Every case states whether its data is real, simulated or synthetic. Results from
 
 ## What every project has in common
 
+```mermaid
+flowchart LR
+    A["Plant data<br/>(real · simulated · synthetic,<br/>always labeled)"] --> B["Baseline<br/>before any model"]
+    B --> C["Time-based validation<br/>without leakage"]
+    C --> D["Threshold chosen by<br/>cost of error"]
+    D --> E["Uncertainty shown<br/>(intervals, bootstrap)"]
+    E --> F{"Verdict"}
+    F --> G["Deploy"]
+    F --> H["Do not deploy"]
+    F --> I["Collect more data"]
+```
+
 Baseline before model · time-based validation without leakage · thresholds chosen by cost of error · uncertainty shown · limits declared.
+
+## Kriter Systems — industrial decision engines
+
+Two independent engines I am building under the **Kriter Systems** organization (in private review; links will be added once public):
+
+| Engine | Decision | Method | Local verification (2026-10-22) |
+|---|---|---|---|
+| **Kriter Dispatch Engine** | Which vehicle visits which customer, in what order | Directed CVRPTW · Google OR-Tools · independent route verifier · CPU/wall-limited worker | 49 tests, 0 skipped, 96.9 % coverage |
+| **Kriter COPQ Core** | When an inspection is worth its cost | Platt / isotonic calibration · cost-sensitive threshold `C_FP / (C_FP + C_FN)` · leakage-tested | 38 tests, 100 % coverage |
+
+Synthetic data only; no pilot results yet. Docker build runs in CI.
 
 **Stack:** Python (pandas, scikit-learn, LightGBM, statsmodels, lifelines) · SQL (PostgreSQL, DuckDB, dbt) · Power BI (DAX, M) · Streamlit · FastAPI · Docker · MLflow · GitHub Actions · pytest · JavaScript
 
