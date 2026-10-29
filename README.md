@@ -7,7 +7,7 @@ Puebla–Tlaxcala, Mexico · 4-year German dual apprenticeship (IHK, VDA) · ES 
 >
 > *Convierto scrap, alertas de falla y defectos en decisiones en pesos, y te digo antes de invertir si tus datos sostienen un modelo.*
 
-[LinkedIn](https://www.linkedin.com/in/jesus-r-l-gonzalez) · [Live demos](https://huggingface.co/JesusRLGonzalez) · **Try any tool with your own Excel — your data never leaves your browser.**
+[Website](https://huggingface.co/spaces/JesusRLGonzalez/jesus-rl-gonzalez) · [LinkedIn](https://www.linkedin.com/in/jesus-r-l-gonzalez) · [Live demos](https://huggingface.co/JesusRLGonzalez) · **Try any tool with your own Excel — your data never leaves your browser.**
 
 ---
 
