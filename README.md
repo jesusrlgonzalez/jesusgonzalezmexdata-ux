@@ -64,5 +64,3 @@ Synthetic data only; no pilot results yet. Docker build runs in CI.
 **Domain:** statistical process control (p′ Laney, Cpk) · cost of poor quality · 8D root cause · ISO 9001:2015 · predictive maintenance (survival analysis) · demand forecasting and inventory
 
 ---
-
-*Uso herramientas de IA como apoyo; la validación y la responsabilidad de cada resultado son mías.*
